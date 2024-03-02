@@ -1,0 +1,15 @@
+{
+  "name": "winglang-aws-api-gateway-sample",
+  "version": "1.0.0",
+  "description": "Winglang AWS API Gateway sample",
+  "author": "Ruslan Kazakov",
+  "license": "MIT",
+  "wing": true,
+  "scripts": {
+    "clean": "rm -rf target",
+    "compile": "wing compile --platform tf-aws main.w",
+    "init": "cd target/main.tfaws && terraform init",
+    "plan": "cd target/main.tfaws && terraform plan",
+    "apply": "cd target/main.tfaws && terraform apply"
+  }
+}
